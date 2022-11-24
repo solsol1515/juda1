@@ -167,22 +167,20 @@
 				<th width="150">파일이름</th>
 				<th width="100">파일용량</th>				
 			</tr>
-			<c:forEach items="${boardList }" var="board">
+<%-- 			<c:forEach items="${boardList }" var="board"> --%>
 				<tr>
-
-<%-- 					<td>${board.b_id}</td> --%>
-<%-- 					<td><a href="getBoard.do?b_id=${board.b_id }"> --%>
-<%-- 							${board.b_title }</a></td> --%>
-<%-- 					<td>${board.b_name }</td> --%>
-<%-- 					<td>${board.b_date }</td> --%>
-<%-- 					<td>${board.b_count }</td> --%>
+					<td>박박이</td>
+					<td><a href="getBoard.do?b_id=${board.b_id }">
+							집에 보내주세요</a></td>
+					<td>박</td>
+					<td>22/11/24</td>
+					<td>215</td>
 <%-- 					<td>${board.b_id}</td> --%>
 <%-- 					<td align="left"><a href="getBoard.do?b_id=${board.b_id }"> --%>
 <%-- 							${board.b_title }</a></td> --%>
 <%-- 					<td>${board.b_name }</td> --%>
 <%-- 					<td>${board.b_date }</td> --%>
 <%-- 					<td>${board.b_count }</td> --%>
-
 					<!-- 추가 -->
 					<td>
 					 <c:choose>
@@ -194,7 +192,7 @@
 					</td>					
 					<td>${board.b_fsize}byte</td>
 				</tr>
-			</c:forEach>
+<%-- 			</c:forEach> --%>
 		</table><br/><br/>
 		<a href="insertBoard.do"><b>새 글 등록</b></a>
 						
